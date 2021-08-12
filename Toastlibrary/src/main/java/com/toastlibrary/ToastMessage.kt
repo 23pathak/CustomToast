@@ -13,7 +13,7 @@ class ToastMessage {
         Toast.makeText(c, message, Toast.LENGTH_SHORT).show()
     }
 
-    fun toast(context: Context?,message: String?) {
+    fun customToast(context: Context?,message: String?) {
         val toast = Toast(context)
         val view: View = LayoutInflater.from(context).inflate(R.layout.custom_toast, null)
         val textView = view.findViewById<View>(R.id.custom_toast_text) as TextView
